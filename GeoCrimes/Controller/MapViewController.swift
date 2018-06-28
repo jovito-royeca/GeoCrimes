@@ -60,14 +60,9 @@ class MapViewController: UIViewController {
         let longitude = mapView.camera.target.longitude
         print("orig center=\(latitude, longitude)")
         
-        // truncate to 6 digits
-        let latitudeString = String(format: "%.6f", latitude)
-        let longitudeString = String(format: "%.6f", longitude)
-        print("center=\(latitudeString, longitudeString)")
-        
         MBProgressHUD.showAdded(to: view, animated: true)
         firstly {
-            api.searchCrimes(onYear: year, onMonth: month, atLatitude: latitudeString, atlongitude: longitudeString)
+            api.searchCrimes(onYear: year, onMonth: month, atLatitude: latitude, atlongitude: longitude)
         }.done { (crimes: [Crime]?) in
             MBProgressHUD.hide(for: self.view, animated: true)
             self.monthTextField.resignFirstResponder()
@@ -90,6 +85,7 @@ class MapViewController: UIViewController {
         }.catch { error in
             MBProgressHUD.hide(for: self.view, animated: true)
             print("\(error)")
+            CoreDataAPI.sharedInstance.deleteCrimes()
         }
     }
     

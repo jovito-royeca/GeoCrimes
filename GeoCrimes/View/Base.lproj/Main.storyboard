@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Crimes in UK-->
+        <!--Crimes in The UK-->
         <scene sceneID="GxF-YD-wJ4">
             <objects>
                 <viewController id="zxc-Pa-dz2" customClass="MapViewController" customModule="GeoCrimes" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,18 +22,35 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY-MM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-EP-EFE">
-                                        <rect key="frame" x="8" y="5" width="359" height="30"/>
+                                        <rect key="frame" x="76" y="5" width="291" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Oo9-UN-31M"/>
+                                            <constraint firstAttribute="height" constant="30" id="rAT-05-74Y"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lS-mh-32a">
+                                        <rect key="frame" x="8" y="5" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Tky-Qv-XBs"/>
+                                            <constraint firstAttribute="width" constant="60" id="mxe-Sp-Squ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="JQr-EP-EFE" secondAttribute="trailing" constant="8" id="FOh-7a-JRR"/>
-                                    <constraint firstItem="JQr-EP-EFE" firstAttribute="leading" secondItem="bvM-yC-6fc" secondAttribute="leading" constant="8" id="hz3-Lk-hRM"/>
-                                    <constraint firstAttribute="bottom" secondItem="JQr-EP-EFE" secondAttribute="bottom" constant="5" id="joJ-Q2-uBI"/>
-                                    <constraint firstItem="JQr-EP-EFE" firstAttribute="top" secondItem="bvM-yC-6fc" secondAttribute="top" constant="5" id="thN-ae-ldS"/>
+                                    <constraint firstAttribute="trailing" secondItem="JQr-EP-EFE" secondAttribute="trailing" constant="8" id="0DD-fa-R00"/>
+                                    <constraint firstAttribute="bottom" secondItem="6lS-mh-32a" secondAttribute="bottom" constant="5" id="Gia-BF-zwA"/>
+                                    <constraint firstItem="JQr-EP-EFE" firstAttribute="leading" secondItem="6lS-mh-32a" secondAttribute="trailing" constant="8" id="TKw-KU-gDN"/>
+                                    <constraint firstAttribute="bottom" secondItem="JQr-EP-EFE" secondAttribute="bottom" constant="5" id="aYq-UK-aly"/>
+                                    <constraint firstItem="6lS-mh-32a" firstAttribute="leading" secondItem="bvM-yC-6fc" secondAttribute="leading" constant="8" id="gkd-Rg-OaK"/>
+                                    <constraint firstItem="JQr-EP-EFE" firstAttribute="top" secondItem="bvM-yC-6fc" secondAttribute="top" constant="5" id="p5y-gg-dRQ"/>
+                                    <constraint firstItem="6lS-mh-32a" firstAttribute="top" secondItem="bvM-yC-6fc" secondAttribute="top" constant="5" id="q0r-j9-3EC"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LU3-T8-fnp" customClass="GMSMapView">
@@ -54,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mEe-De-A74"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Crimes in UK" id="awv-Ce-Uso"/>
+                    <navigationItem key="navigationItem" title="Crimes in The UK" id="awv-Ce-Uso"/>
                     <connections>
                         <outlet property="mapView" destination="LU3-T8-fnp" id="Wkm-EF-ZEK"/>
                         <outlet property="monthTextField" destination="JQr-EP-EFE" id="jIY-lN-bJN"/>

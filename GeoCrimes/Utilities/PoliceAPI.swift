@@ -11,7 +11,7 @@ import CoreLocation
 import PromiseKit
 
 class PoliceAPI: NSObject {
-    func searchCrimes(onYear year: Int, onMonth month: Int, atLatitude latitude: String, atlongitude longitude: String) -> Promise<[Crime]?> {
+    func searchCrimes(onYear year: Int, onMonth month: Int, atLatitude latitude: CLLocationDegrees, atlongitude longitude: CLLocationDegrees) -> Promise<[Crime]?> {
         return Promise { seal in
             guard let urlString = "https://data.police.uk/api/crimes-at-location?date=\(year)-\(month)&lat=\(latitude)&lng=\(longitude)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
                 let url = URL(string: urlString) else {

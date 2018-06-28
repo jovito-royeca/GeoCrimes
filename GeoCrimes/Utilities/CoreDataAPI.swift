@@ -134,15 +134,26 @@ class CoreDataAPI: NSObject {
         }
     }
     
+    /*
+     * Delete crimes from a previous search result
+     */
     func deleteCrimes() {
         // delete existing data first
-        let request = Crime.crimeFetchRequest()
-        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request as! NSFetchRequest<NSFetchRequestResult> )
+        let streetRequest = Street.streetFetchRequest()
+        var deleteRequest = NSBatchDeleteRequest(fetchRequest: streetRequest as! NSFetchRequest<NSFetchRequestResult> )
+        try! dataStack?.persistentStoreCoordinator.execute(deleteRequest, with: (dataStack?.mainContext)!)
+        
+        let locationRequest = Location.locationFetchRequest()
+        deleteRequest = NSBatchDeleteRequest(fetchRequest: locationRequest as! NSFetchRequest<NSFetchRequestResult> )
+        try! dataStack?.persistentStoreCoordinator.execute(deleteRequest, with: (dataStack?.mainContext)!)
+        
+        let crimeRequest = Crime.crimeFetchRequest()
+        deleteRequest = NSBatchDeleteRequest(fetchRequest: crimeRequest as! NSFetchRequest<NSFetchRequestResult> )
         try! dataStack?.persistentStoreCoordinator.execute(deleteRequest, with: (dataStack?.mainContext)!)
     }
     
     /*
-     * Fetch data using main context
+     * Fetch crimes using main context
      */
     func fetchCrimes() -> [Crime]? {
         let request = Crime.crimeFetchRequest()

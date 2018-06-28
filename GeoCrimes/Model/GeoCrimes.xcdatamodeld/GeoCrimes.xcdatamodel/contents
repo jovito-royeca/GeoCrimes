@@ -12,8 +12,13 @@
         <attribute name="locationSubtype" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="locationType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="month" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="persistentId" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="crime" inverseEntity="Location" syncable="YES"/>
+        <attribute name="persistentId" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="heper.remoteKey" value="persistent_id"/>
+                <entry key="sync.remoteKey" value="persistent_id"/>
+            </userInfo>
+        </attribute>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Location" inverseName="crime" inverseEntity="Location" syncable="YES"/>
     </entity>
     <entity name="Location" representedClassName="Location" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES">
@@ -24,8 +29,8 @@
         </attribute>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="crime" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Crime" inverseName="location" inverseEntity="Crime" syncable="YES"/>
-        <relationship name="street" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Street" inverseName="location" inverseEntity="Street" syncable="YES"/>
+        <relationship name="crime" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Crime" inverseName="location" inverseEntity="Crime" syncable="YES"/>
+        <relationship name="street" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Street" inverseName="location" inverseEntity="Street" syncable="YES"/>
     </entity>
     <entity name="Street" representedClassName="Street" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String" syncable="YES">
@@ -35,7 +40,7 @@
             </userInfo>
         </attribute>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="location" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="street" inverseEntity="Location" syncable="YES"/>
+        <relationship name="location" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Location" inverseName="street" inverseEntity="Location" syncable="YES"/>
     </entity>
     <elements>
         <element name="Crime" positionX="-63" positionY="-18" width="128" height="165"/>
