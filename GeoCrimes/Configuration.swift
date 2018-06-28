@@ -11,7 +11,7 @@ import Foundation
 /*
  * The provided Gogole Maps API Key
  */
-let kGoogleMapsAPIKey = "AIzaSyAI1-3m4SPTHWvJ64t99KHUaRd8w_9sSSs"
+let kGoogleMapsAPIKey = "CHANGE_THIS_API_KEY"
 
 // Coordinates of London, Britain
 let kInitialLatitude  = 51.509865
