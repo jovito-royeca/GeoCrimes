@@ -43,6 +43,9 @@ class MapViewController: UIViewController {
     }
 
     // MARK: Custom methods
+    /*
+     * Calls the API and displays markers in the map
+     */
     func getCrimeLocations() {
         guard let text = monthTextField.text,
             let yearString = text.components(separatedBy: "-").first,
@@ -65,7 +68,7 @@ class MapViewController: UIViewController {
             api.searchCrimes(onYear: year, onMonth: month, atLatitude: latitude, atlongitude: longitude)
         }.done { (crimes: [Crime]?) in
             MBProgressHUD.hide(for: self.view, animated: true)
-            self.monthTextField.resignFirstResponder()
+            self.monthTextField.resignFirstResponder() // hide keyboard
 
             guard let crimes = crimes else {
                 return
@@ -89,6 +92,9 @@ class MapViewController: UIViewController {
         }
     }
     
+    /*
+     * Adds markers in the map at the given coordinates.
+     */
     func addMarker(latitude: CLLocationDegrees, longitude: CLLocationDegrees, title: String, snippet: String) {
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -97,10 +103,16 @@ class MapViewController: UIViewController {
         marker.map = mapView
     }
 
+    /*
+     * Removes existing markers in the map.
+     */
     func clearMarkers() {
         mapView.clear()
     }
     
+    /*
+     * Returns the bounds in the map.
+     */
     func getVisibleBounds() -> GMSCoordinateBounds {
         let visibleRegion = mapView.projection.visibleRegion()
         let bounds = GMSCoordinateBounds(region: visibleRegion)
@@ -110,6 +122,9 @@ class MapViewController: UIViewController {
 
 // MARK: UITextFieldDelegate
 extension MapViewController : UITextFieldDelegate {
+    /*
+     * Calls the API after the user taps on the Enter key.
+     */
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM"
@@ -132,9 +147,12 @@ extension MapViewController : UITextFieldDelegate {
 // MARK: GMSMapViewDelegate
 extension MapViewController : GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
-        monthTextField.resignFirstResponder()
+        monthTextField.resignFirstResponder() // hide the keyboard
     }
     
+    /*
+     * This is called after initial view load and after user moves the map.
+     */
     func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
         getCrimeLocations()
     }

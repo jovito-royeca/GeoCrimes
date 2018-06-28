@@ -10,10 +10,17 @@ import UIKit
 import CoreLocation
 import PromiseKit
 
+/*
+ * The Police API caller.
+ */
 class PoliceAPI: NSObject {
+    
+    /*
+     * Calls the API, calls inserting of JSON into Core Data, then fetches and returns results via Promises.
+     */
     func searchCrimes(onYear year: Int, onMonth month: Int, atLatitude latitude: CLLocationDegrees, atlongitude longitude: CLLocationDegrees) -> Promise<[Crime]?> {
         return Promise { seal in
-            guard let urlString = "https://data.police.uk/api/crimes-at-location?date=\(year)-\(month)&lat=\(latitude)&lng=\(longitude)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
+            guard let urlString = "https://data.police.uk/api/crimes-at-location?date=\(year)-\(month < 10 ? "0" : "")\(month)&lat=\(latitude)&lng=\(longitude)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
                 let url = URL(string: urlString) else {
                 let error = NSError(domain: NSURLErrorDomain, code: 305, userInfo: [NSLocalizedDescriptionKey: "BaD URL"])
                 seal.reject(error)

@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import PromiseKit
+
 @testable import GeoCrimes
 
 class GeoCrimesTests: XCTestCase {
@@ -31,6 +33,32 @@ class GeoCrimesTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testAPI() {
+        let expectation = XCTestExpectation(description: "testAPI()")
+        
+        let api = PoliceAPI()
+        
+        firstly {
+            api.searchCrimes(onYear: 2017, onMonth: 2, atLatitude: kInitialLatitude, atlongitude: kInitialLongitude)
+        }.done { (crimes: [Crime]?) in
+            if let crimes = crimes {
+                print("crimes = \(crimes)")
+            } else {
+                print("No data found.")
+            }
+            
+            expectation.fulfill()
+            
+        }.catch { error in
+            print("\(error)")
+            CoreDataAPI.sharedInstance.deleteCrimes()
+            expectation.fulfill()
+        }
+        
+        
+        wait(for: [expectation], timeout: 10.0)
     }
     
 }

@@ -10,6 +10,9 @@ import UIKit
 import PromiseKit
 import Sync
 
+/*
+ * A singleton class that handles Core Data operations.
+ */
 class CoreDataAPI: NSObject {
     // MARK: - Shared Instance
     static let sharedInstance = CoreDataAPI()
