@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Crimes in UK-->
         <scene sceneID="GxF-YD-wJ4">
             <objects>
                 <viewController id="zxc-Pa-dz2" customClass="MapViewController" customModule="GeoCrimes" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,34 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-yC-6fc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY-MM" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-EP-EFE">
+                                        <rect key="frame" x="8" y="5" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JQr-EP-EFE" secondAttribute="trailing" constant="8" id="FOh-7a-JRR"/>
+                                    <constraint firstItem="JQr-EP-EFE" firstAttribute="leading" secondItem="bvM-yC-6fc" secondAttribute="leading" constant="8" id="hz3-Lk-hRM"/>
+                                    <constraint firstAttribute="bottom" secondItem="JQr-EP-EFE" secondAttribute="bottom" constant="5" id="joJ-Q2-uBI"/>
+                                    <constraint firstItem="JQr-EP-EFE" firstAttribute="top" secondItem="bvM-yC-6fc" secondAttribute="top" constant="5" id="thN-ae-ldS"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LU3-T8-fnp" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MMM-YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-EP-EFE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LU3-T8-fnp" firstAttribute="bottom" secondItem="mEe-De-A74" secondAttribute="bottom" id="0Ku-Of-MH3"/>
-                            <constraint firstItem="LU3-T8-fnp" firstAttribute="trailing" secondItem="mEe-De-A74" secondAttribute="trailing" id="5xY-ml-HOM"/>
-                            <constraint firstItem="LU3-T8-fnp" firstAttribute="top" secondItem="JQr-EP-EFE" secondAttribute="bottom" id="9ad-er-bxs"/>
-                            <constraint firstItem="JQr-EP-EFE" firstAttribute="top" secondItem="mEe-De-A74" secondAttribute="top" id="Kxj-Ea-uR3"/>
-                            <constraint firstItem="JQr-EP-EFE" firstAttribute="trailing" secondItem="mEe-De-A74" secondAttribute="trailing" id="Sz7-ce-gBY"/>
-                            <constraint firstItem="LU3-T8-fnp" firstAttribute="top" secondItem="JQr-EP-EFE" secondAttribute="bottom" id="d5D-Ax-na1"/>
-                            <constraint firstItem="LU3-T8-fnp" firstAttribute="leading" secondItem="mEe-De-A74" secondAttribute="leading" id="hNv-Xm-vhm"/>
-                            <constraint firstItem="JQr-EP-EFE" firstAttribute="leading" secondItem="mEe-De-A74" secondAttribute="leading" id="zVc-s4-mzD"/>
+                            <constraint firstItem="bvM-yC-6fc" firstAttribute="top" secondItem="mEe-De-A74" secondAttribute="top" id="6Ng-79-OHv"/>
+                            <constraint firstItem="LU3-T8-fnp" firstAttribute="leading" secondItem="mEe-De-A74" secondAttribute="leading" id="70Y-VS-bts"/>
+                            <constraint firstItem="bvM-yC-6fc" firstAttribute="leading" secondItem="mEe-De-A74" secondAttribute="leading" id="Upp-kn-YIU"/>
+                            <constraint firstItem="LU3-T8-fnp" firstAttribute="top" secondItem="bvM-yC-6fc" secondAttribute="bottom" id="b78-Pe-oEw"/>
+                            <constraint firstItem="LU3-T8-fnp" firstAttribute="bottom" secondItem="mEe-De-A74" secondAttribute="bottom" id="cFc-vR-RgK"/>
+                            <constraint firstItem="bvM-yC-6fc" firstAttribute="trailing" secondItem="mEe-De-A74" secondAttribute="trailing" id="eFG-d4-Rbl"/>
+                            <constraint firstItem="LU3-T8-fnp" firstAttribute="trailing" secondItem="mEe-De-A74" secondAttribute="trailing" id="m4A-Ie-pKu"/>
+                            <constraint firstItem="LU3-T8-fnp" firstAttribute="top" secondItem="bvM-yC-6fc" secondAttribute="bottom" id="ma0-kP-VnG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mEe-De-A74"/>
                     </view>
-                    <navigationItem key="navigationItem" id="awv-Ce-Uso"/>
+                    <navigationItem key="navigationItem" title="Crimes in UK" id="awv-Ce-Uso"/>
                     <connections>
                         <outlet property="mapView" destination="LU3-T8-fnp" id="Wkm-EF-ZEK"/>
-                        <outlet property="monthTextView" destination="JQr-EP-EFE" id="sYM-Qx-nvj"/>
+                        <outlet property="monthTextField" destination="JQr-EP-EFE" id="jIY-lN-bJN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75M-QG-HSC" userLabel="First Responder" sceneMemberID="firstResponder"/>

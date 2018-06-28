@@ -19,6 +19,30 @@
 		1119ED5020E4B00800E89EA2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED4F20E4B00800E89EA2 /* Configuration.swift */; };
 		1119ED5120E4B00800E89EA2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED4F20E4B00800E89EA2 /* Configuration.swift */; };
 		1119ED5220E4B00800E89EA2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED4F20E4B00800E89EA2 /* Configuration.swift */; };
+		11886C6B20E4B8E300B34416 /* PoliceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886C6A20E4B8E300B34416 /* PoliceAPI.swift */; };
+		11886C6C20E4B8E300B34416 /* PoliceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886C6A20E4B8E300B34416 /* PoliceAPI.swift */; };
+		11886C6D20E4B8E300B34416 /* PoliceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886C6A20E4B8E300B34416 /* PoliceAPI.swift */; };
+		11886CA720E4EEC900B34416 /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CA620E4EEC900B34416 /* CoreDataAPI.swift */; };
+		11886CA820E4EEC900B34416 /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CA620E4EEC900B34416 /* CoreDataAPI.swift */; };
+		11886CA920E4EEC900B34416 /* CoreDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CA620E4EEC900B34416 /* CoreDataAPI.swift */; };
+		11886CC820E4F81300B34416 /* Crime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC220E4F81200B34416 /* Crime+CoreDataClass.swift */; };
+		11886CC920E4F81300B34416 /* Crime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC220E4F81200B34416 /* Crime+CoreDataClass.swift */; };
+		11886CCA20E4F81300B34416 /* Crime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC220E4F81200B34416 /* Crime+CoreDataClass.swift */; };
+		11886CCB20E4F81300B34416 /* Crime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC320E4F81300B34416 /* Crime+CoreDataProperties.swift */; };
+		11886CCC20E4F81300B34416 /* Crime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC320E4F81300B34416 /* Crime+CoreDataProperties.swift */; };
+		11886CCD20E4F81300B34416 /* Crime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC320E4F81300B34416 /* Crime+CoreDataProperties.swift */; };
+		11886CCE20E4F81300B34416 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC420E4F81300B34416 /* Location+CoreDataClass.swift */; };
+		11886CCF20E4F81300B34416 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC420E4F81300B34416 /* Location+CoreDataClass.swift */; };
+		11886CD020E4F81300B34416 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC420E4F81300B34416 /* Location+CoreDataClass.swift */; };
+		11886CD120E4F81300B34416 /* Street+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC520E4F81300B34416 /* Street+CoreDataProperties.swift */; };
+		11886CD220E4F81300B34416 /* Street+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC520E4F81300B34416 /* Street+CoreDataProperties.swift */; };
+		11886CD320E4F81300B34416 /* Street+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC520E4F81300B34416 /* Street+CoreDataProperties.swift */; };
+		11886CD420E4F81300B34416 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC620E4F81300B34416 /* Location+CoreDataProperties.swift */; };
+		11886CD520E4F81300B34416 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC620E4F81300B34416 /* Location+CoreDataProperties.swift */; };
+		11886CD620E4F81300B34416 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC620E4F81300B34416 /* Location+CoreDataProperties.swift */; };
+		11886CD720E4F81300B34416 /* Street+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC720E4F81300B34416 /* Street+CoreDataClass.swift */; };
+		11886CD820E4F81300B34416 /* Street+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC720E4F81300B34416 /* Street+CoreDataClass.swift */; };
+		11886CD920E4F81300B34416 /* Street+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11886CC720E4F81300B34416 /* Street+CoreDataClass.swift */; };
 		3E12F7EF1537E3DC6A99E3E4 /* Pods_GeoCrimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBFE8343E88336B1E35B87C /* Pods_GeoCrimesTests.framework */; };
 		EB78050A5DB4AF65DDFF454C /* Pods_GeoCrimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD61FD27DAE424F86B8A846 /* Pods_GeoCrimes.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +80,14 @@
 		1119ED3D20E4AD3300E89EA2 /* GeoCrimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCrimesUITests.swift; sourceTree = "<group>"; };
 		1119ED3F20E4AD3300E89EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1119ED4F20E4B00800E89EA2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		11886C6A20E4B8E300B34416 /* PoliceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceAPI.swift; sourceTree = "<group>"; };
+		11886CA620E4EEC900B34416 /* CoreDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataAPI.swift; sourceTree = "<group>"; };
+		11886CC220E4F81200B34416 /* Crime+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crime+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11886CC320E4F81300B34416 /* Crime+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Crime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11886CC420E4F81300B34416 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		11886CC520E4F81300B34416 /* Street+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Street+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11886CC620E4F81300B34416 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11886CC720E4F81300B34416 /* Street+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Street+CoreDataClass.swift"; sourceTree = "<group>"; };
 		13CB7A782C08F6E9A7274147 /* Pods_GeoCrimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoCrimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE3C6328A84AECBD7548156 /* Pods-GeoCrimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimesTests/Pods-GeoCrimesTests.release.xcconfig"; sourceTree = "<group>"; };
 		226647F9DE5544EFAB6ADCD8 /* Pods-GeoCrimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimesUITests/Pods-GeoCrimesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,10 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				1119ED4B20E4AF9500E89EA2 /* Model */,
-				1119ED2120E4AD3100E89EA2 /* GeoCrimes.xcdatamodeld */,
 				1119ED4C20E4AF9C00E89EA2 /* View */,
-				1119ED1E20E4AD3100E89EA2 /* Main.storyboard */,
-				1119ED2620E4AD3300E89EA2 /* LaunchScreen.storyboard */,
 				1119ED4D20E4AFA000E89EA2 /* Controller */,
 				1119ED1C20E4AD3100E89EA2 /* MapViewController.swift */,
 				1119ED4E20E4AFE600E89EA2 /* Utilities */,
@@ -157,6 +186,13 @@
 		1119ED4B20E4AF9500E89EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11886CC220E4F81200B34416 /* Crime+CoreDataClass.swift */,
+				11886CC320E4F81300B34416 /* Crime+CoreDataProperties.swift */,
+				11886CC420E4F81300B34416 /* Location+CoreDataClass.swift */,
+				11886CC620E4F81300B34416 /* Location+CoreDataProperties.swift */,
+				11886CC720E4F81300B34416 /* Street+CoreDataClass.swift */,
+				11886CC520E4F81300B34416 /* Street+CoreDataProperties.swift */,
+				1119ED2120E4AD3100E89EA2 /* GeoCrimes.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +200,8 @@
 		1119ED4C20E4AF9C00E89EA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1119ED1E20E4AD3100E89EA2 /* Main.storyboard */,
+				1119ED2620E4AD3300E89EA2 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +216,8 @@
 		1119ED4E20E4AFE600E89EA2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				11886C6A20E4B8E300B34416 /* PoliceAPI.swift */,
+				11886CA620E4EEC900B34416 /* CoreDataAPI.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -446,8 +486,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11886CD120E4F81300B34416 /* Street+CoreDataProperties.swift in Sources */,
+				11886CA720E4EEC900B34416 /* CoreDataAPI.swift in Sources */,
+				11886CD420E4F81300B34416 /* Location+CoreDataProperties.swift in Sources */,
 				1119ED1D20E4AD3100E89EA2 /* MapViewController.swift in Sources */,
+				11886CD720E4F81300B34416 /* Street+CoreDataClass.swift in Sources */,
+				11886C6B20E4B8E300B34416 /* PoliceAPI.swift in Sources */,
+				11886CC820E4F81300B34416 /* Crime+CoreDataClass.swift in Sources */,
+				11886CCB20E4F81300B34416 /* Crime+CoreDataProperties.swift in Sources */,
 				1119ED1B20E4AD3100E89EA2 /* AppDelegate.swift in Sources */,
+				11886CCE20E4F81300B34416 /* Location+CoreDataClass.swift in Sources */,
 				1119ED5020E4B00800E89EA2 /* Configuration.swift in Sources */,
 				1119ED2320E4AD3100E89EA2 /* GeoCrimes.xcdatamodeld in Sources */,
 			);
@@ -457,8 +505,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11886CCF20E4F81300B34416 /* Location+CoreDataClass.swift in Sources */,
+				11886CA820E4EEC900B34416 /* CoreDataAPI.swift in Sources */,
 				1119ED5120E4B00800E89EA2 /* Configuration.swift in Sources */,
+				11886CC920E4F81300B34416 /* Crime+CoreDataClass.swift in Sources */,
+				11886CD220E4F81300B34416 /* Street+CoreDataProperties.swift in Sources */,
+				11886CD520E4F81300B34416 /* Location+CoreDataProperties.swift in Sources */,
+				11886CD820E4F81300B34416 /* Street+CoreDataClass.swift in Sources */,
 				1119ED3320E4AD3300E89EA2 /* GeoCrimesTests.swift in Sources */,
+				11886CCC20E4F81300B34416 /* Crime+CoreDataProperties.swift in Sources */,
+				11886C6C20E4B8E300B34416 /* PoliceAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,8 +522,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11886CD020E4F81300B34416 /* Location+CoreDataClass.swift in Sources */,
+				11886CA920E4EEC900B34416 /* CoreDataAPI.swift in Sources */,
 				1119ED5220E4B00800E89EA2 /* Configuration.swift in Sources */,
+				11886CCA20E4F81300B34416 /* Crime+CoreDataClass.swift in Sources */,
+				11886CD320E4F81300B34416 /* Street+CoreDataProperties.swift in Sources */,
+				11886CD620E4F81300B34416 /* Location+CoreDataProperties.swift in Sources */,
+				11886CD920E4F81300B34416 /* Street+CoreDataClass.swift in Sources */,
 				1119ED3E20E4AD3300E89EA2 /* GeoCrimesUITests.swift in Sources */,
+				11886CCD20E4F81300B34416 /* Crime+CoreDataProperties.swift in Sources */,
+				11886C6D20E4B8E300B34416 /* PoliceAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,10 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeoCrimes/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.informgroup.GeoCrimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -645,10 +706,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeoCrimes/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.informgroup.GeoCrimes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -664,11 +722,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeoCrimesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.informgroup.GeoCrimesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -685,11 +739,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeoCrimesTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.informgroup.GeoCrimesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -705,11 +755,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeoCrimesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.informgroup.GeoCrimesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -725,11 +771,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeoCrimesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jovitoroyeca.informgroup.GeoCrimesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

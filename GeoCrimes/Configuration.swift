@@ -9,8 +9,13 @@
 import Foundation
 
 /*
- * The provided Gggole Maps API Key
+ * The provided Gogole Maps API Key
  */
 let kGoogleMapsAPIKey = "AIzaSyAI1-3m4SPTHWvJ64t99KHUaRd8w_9sSSs"
 
-let kInitialLocation = "London, England"
+// Coordinates of London, Britain
+let kInitialLatitude  = 52.629729//51.509865
+let kInitialLongitude = -1.131592//-0.118092
+let kDefaultZoom      = Float(6.0)
+//let kInitialTitle     = "London"
+//let kInitialSnippet   = "United Kingdom"
