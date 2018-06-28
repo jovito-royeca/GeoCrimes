@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815AAAEB82D532C63942B1F /* Pods_GeoCrimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CB7A782C08F6E9A7274147 /* Pods_GeoCrimesUITests.framework */; };
 		1119ED1B20E4AD3100E89EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED1A20E4AD3100E89EA2 /* AppDelegate.swift */; };
 		1119ED1D20E4AD3100E89EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED1C20E4AD3100E89EA2 /* ViewController.swift */; };
 		1119ED2020E4AD3100E89EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1119ED1E20E4AD3100E89EA2 /* Main.storyboard */; };
@@ -15,6 +16,11 @@
 		1119ED2820E4AD3300E89EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1119ED2620E4AD3300E89EA2 /* LaunchScreen.storyboard */; };
 		1119ED3320E4AD3300E89EA2 /* GeoCrimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED3220E4AD3300E89EA2 /* GeoCrimesTests.swift */; };
 		1119ED3E20E4AD3300E89EA2 /* GeoCrimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED3D20E4AD3300E89EA2 /* GeoCrimesUITests.swift */; };
+		1119ED5020E4B00800E89EA2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED4F20E4B00800E89EA2 /* Configuration.swift */; };
+		1119ED5120E4B00800E89EA2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED4F20E4B00800E89EA2 /* Configuration.swift */; };
+		1119ED5220E4B00800E89EA2 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1119ED4F20E4B00800E89EA2 /* Configuration.swift */; };
+		3E12F7EF1537E3DC6A99E3E4 /* Pods_GeoCrimesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBFE8343E88336B1E35B87C /* Pods_GeoCrimesTests.framework */; };
+		EB78050A5DB4AF65DDFF454C /* Pods_GeoCrimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD61FD27DAE424F86B8A846 /* Pods_GeoCrimes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,16 @@
 		1119ED3920E4AD3300E89EA2 /* GeoCrimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoCrimesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1119ED3D20E4AD3300E89EA2 /* GeoCrimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCrimesUITests.swift; sourceTree = "<group>"; };
 		1119ED3F20E4AD3300E89EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1119ED4F20E4B00800E89EA2 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		13CB7A782C08F6E9A7274147 /* Pods_GeoCrimesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoCrimesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE3C6328A84AECBD7548156 /* Pods-GeoCrimesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimesTests/Pods-GeoCrimesTests.release.xcconfig"; sourceTree = "<group>"; };
+		226647F9DE5544EFAB6ADCD8 /* Pods-GeoCrimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimesUITests/Pods-GeoCrimesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5BB8614D3295281BCFD1273D /* Pods-GeoCrimesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimesUITests/Pods-GeoCrimesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DBFE8343E88336B1E35B87C /* Pods_GeoCrimesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoCrimesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C2BD599A9CC13B247FD2DA8 /* Pods-GeoCrimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimesTests/Pods-GeoCrimesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8230B0F90EB245362BCC9346 /* Pods-GeoCrimes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimes/Pods-GeoCrimes.debug.xcconfig"; sourceTree = "<group>"; };
+		A462966C9BE0B3FC94388714 /* Pods-GeoCrimes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoCrimes.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoCrimes/Pods-GeoCrimes.release.xcconfig"; sourceTree = "<group>"; };
+		ABD61FD27DAE424F86B8A846 /* Pods_GeoCrimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoCrimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB78050A5DB4AF65DDFF454C /* Pods_GeoCrimes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E12F7EF1537E3DC6A99E3E4 /* Pods_GeoCrimesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0815AAAEB82D532C63942B1F /* Pods_GeoCrimesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				1119ED3120E4AD3300E89EA2 /* GeoCrimesTests */,
 				1119ED3C20E4AD3300E89EA2 /* GeoCrimesUITests */,
 				1119ED1820E4AD3100E89EA2 /* Products */,
+				FFE37B52902387EA5E94AECD /* Pods */,
+				891A20AED3EA29699B098E07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +120,18 @@
 		1119ED1920E4AD3100E89EA2 /* GeoCrimes */ = {
 			isa = PBXGroup;
 			children = (
-				1119ED1A20E4AD3100E89EA2 /* AppDelegate.swift */,
-				1119ED1C20E4AD3100E89EA2 /* ViewController.swift */,
-				1119ED1E20E4AD3100E89EA2 /* Main.storyboard */,
-				1119ED2420E4AD3300E89EA2 /* Assets.xcassets */,
-				1119ED2620E4AD3300E89EA2 /* LaunchScreen.storyboard */,
-				1119ED2920E4AD3300E89EA2 /* Info.plist */,
+				1119ED4B20E4AF9500E89EA2 /* Model */,
 				1119ED2120E4AD3100E89EA2 /* GeoCrimes.xcdatamodeld */,
+				1119ED4C20E4AF9C00E89EA2 /* View */,
+				1119ED1E20E4AD3100E89EA2 /* Main.storyboard */,
+				1119ED2620E4AD3300E89EA2 /* LaunchScreen.storyboard */,
+				1119ED4D20E4AFA000E89EA2 /* Controller */,
+				1119ED1C20E4AD3100E89EA2 /* ViewController.swift */,
+				1119ED4E20E4AFE600E89EA2 /* Utilities */,
+				1119ED1A20E4AD3100E89EA2 /* AppDelegate.swift */,
+				1119ED4F20E4B00800E89EA2 /* Configuration.swift */,
+				1119ED2420E4AD3300E89EA2 /* Assets.xcassets */,
+				1119ED2920E4AD3300E89EA2 /* Info.plist */,
 			);
 			path = GeoCrimes;
 			sourceTree = "<group>";
@@ -128,6 +154,57 @@
 			path = GeoCrimesUITests;
 			sourceTree = "<group>";
 		};
+		1119ED4B20E4AF9500E89EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1119ED4C20E4AF9C00E89EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1119ED4D20E4AFA000E89EA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1119ED4E20E4AFE600E89EA2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		891A20AED3EA29699B098E07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABD61FD27DAE424F86B8A846 /* Pods_GeoCrimes.framework */,
+				6DBFE8343E88336B1E35B87C /* Pods_GeoCrimesTests.framework */,
+				13CB7A782C08F6E9A7274147 /* Pods_GeoCrimesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFE37B52902387EA5E94AECD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8230B0F90EB245362BCC9346 /* Pods-GeoCrimes.debug.xcconfig */,
+				A462966C9BE0B3FC94388714 /* Pods-GeoCrimes.release.xcconfig */,
+				7C2BD599A9CC13B247FD2DA8 /* Pods-GeoCrimesTests.debug.xcconfig */,
+				1FE3C6328A84AECBD7548156 /* Pods-GeoCrimesTests.release.xcconfig */,
+				5BB8614D3295281BCFD1273D /* Pods-GeoCrimesUITests.debug.xcconfig */,
+				226647F9DE5544EFAB6ADCD8 /* Pods-GeoCrimesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1119ED4220E4AD3300E89EA2 /* Build configuration list for PBXNativeTarget "GeoCrimes" */;
 			buildPhases = (
+				34E35922A66BA63BE50BCC05 /* [CP] Check Pods Manifest.lock */,
 				1119ED1320E4AD3100E89EA2 /* Sources */,
 				1119ED1420E4AD3100E89EA2 /* Frameworks */,
 				1119ED1520E4AD3100E89EA2 /* Resources */,
+				17492939EDB9C012CBAEB8F0 /* [CP] Embed Pods Frameworks */,
+				8A9292BF63BF94324B16076F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1119ED4520E4AD3300E89EA2 /* Build configuration list for PBXNativeTarget "GeoCrimesTests" */;
 			buildPhases = (
+				AA1234C8AF6C59C9815DAA09 /* [CP] Check Pods Manifest.lock */,
 				1119ED2A20E4AD3300E89EA2 /* Sources */,
 				1119ED2B20E4AD3300E89EA2 /* Frameworks */,
 				1119ED2C20E4AD3300E89EA2 /* Resources */,
@@ -170,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1119ED4820E4AD3300E89EA2 /* Build configuration list for PBXNativeTarget "GeoCrimesUITests" */;
 			buildPhases = (
+				A8494A19B291086B0749DDBF /* [CP] Check Pods Manifest.lock */,
 				1119ED3520E4AD3300E89EA2 /* Sources */,
 				1119ED3620E4AD3300E89EA2 /* Frameworks */,
 				1119ED3720E4AD3300E89EA2 /* Resources */,
@@ -254,6 +336,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17492939EDB9C012CBAEB8F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoCrimes/Pods-GeoCrimes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DATASource/DATASource.framework",
+				"${BUILT_PRODUCTS_DIR}/DATAStack/DATAStack.framework",
+				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Sync/Sync.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATASource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DATAStack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sync.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoCrimes/Pods-GeoCrimes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34E35922A66BA63BE50BCC05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoCrimes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A9292BF63BF94324B16076F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoCrimes/Pods-GeoCrimes-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoCrimes/Pods-GeoCrimes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8494A19B291086B0749DDBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoCrimesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1234C8AF6C59C9815DAA09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoCrimesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1119ED1320E4AD3100E89EA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +448,7 @@
 			files = (
 				1119ED1D20E4AD3100E89EA2 /* ViewController.swift in Sources */,
 				1119ED1B20E4AD3100E89EA2 /* AppDelegate.swift in Sources */,
+				1119ED5020E4B00800E89EA2 /* Configuration.swift in Sources */,
 				1119ED2320E4AD3100E89EA2 /* GeoCrimes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1119ED5120E4B00800E89EA2 /* Configuration.swift in Sources */,
 				1119ED3320E4AD3300E89EA2 /* GeoCrimesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1119ED5220E4B00800E89EA2 /* Configuration.swift in Sources */,
 				1119ED3E20E4AD3300E89EA2 /* GeoCrimesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +622,7 @@
 		};
 		1119ED4320E4AD3300E89EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8230B0F90EB245362BCC9346 /* Pods-GeoCrimes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +640,7 @@
 		};
 		1119ED4420E4AD3300E89EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A462966C9BE0B3FC94388714 /* Pods-GeoCrimes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +658,7 @@
 		};
 		1119ED4620E4AD3300E89EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2BD599A9CC13B247FD2DA8 /* Pods-GeoCrimesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +679,7 @@
 		};
 		1119ED4720E4AD3300E89EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE3C6328A84AECBD7548156 /* Pods-GeoCrimesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +700,7 @@
 		};
 		1119ED4920E4AD3300E89EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BB8614D3295281BCFD1273D /* Pods-GeoCrimesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +720,7 @@
 		};
 		1119ED4A20E4AD3300E89EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226647F9DE5544EFAB6ADCD8 /* Pods-GeoCrimesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
